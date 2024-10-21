@@ -1,6 +1,0 @@
-@RentManagerAPI_HostAddress = http://localhost:5177
-
-GET {{RentManagerAPI_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
