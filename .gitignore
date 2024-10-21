@@ -1,0 +1,67 @@
+# Build Folders (Binary)
+bin/
+obj/
+out/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Visual Studio Code
+.vscode/
+.vscode/*
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+.nuget/
+
+# Dotnet Publish Output
+publish/
+*.db
+
+# Database files
+*.mdf
+*.ldf
+*.sqlite
+*.sqlite3
+
+# Entity Framework Migrations
+Migrations/
+
+# Docker
+**/Dockerfile
+**/docker-compose.yml
+.dockerignore
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.idea/
+*.iml
+*.csproj.user
+
+# JetBrains Rider
+.idea/
+.idea/*
+
+# macOS files
+*.DS_Store
+
+# Test Results
+TestResults/
+*.trx
+*.coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
