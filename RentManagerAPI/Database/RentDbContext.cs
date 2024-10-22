@@ -5,6 +5,9 @@ using Models.Properties;
 namespace Database;
 public class RentDbContext : DbContext
 {
+    public RentDbContext(DbContextOptions<RentDbContext> options)
+            : base(options) { }
+    
     public DbSet<Person> People { get; set; }
     public DbSet<Property> Properties { get; set; }
 
