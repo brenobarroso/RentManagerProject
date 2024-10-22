@@ -2,7 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using Models.Persons;
 using Models.Properties;
 
-public class RentManagerDbContext : DbContext
+namespace Database;
+public class RentDbContext : DbContext
 {
     public DbSet<Person> People { get; set; }
     public DbSet<Property> Properties { get; set; }
