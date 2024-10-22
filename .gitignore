@@ -32,10 +32,6 @@ publish/
 *.sqlite
 *.sqlite3
 
-# Entity Framework Migrations
-Migrations/
-
-
 # OS generated files
 .DS_Store
 Thumbs.db
