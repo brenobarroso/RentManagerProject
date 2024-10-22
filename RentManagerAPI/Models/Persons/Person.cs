@@ -1,7 +1,9 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Models.Properties;
 
-namespace SeuNamespace.Models
+namespace Models.Persons
 {
     public class Person
     {
@@ -21,7 +23,7 @@ namespace SeuNamespace.Models
         public string? Email { get; set; }
 
         [Phone]
-        [StringLength(11)]
+        [StringLength(15)]
         public string? PhoneNumber { get; set; }
 
         [StringLength(300)]
@@ -30,15 +32,20 @@ namespace SeuNamespace.Models
         [Required]
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
-        public DateTime? UpdateAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
 
         [Required]
-        public Role Role { get; set; }
+        public PersonType PersonType { get; set; }
+
+        // Relacionamentos
+        public List<Property> OwnedProperties { get; set; } = new List<Property>();
+
+        public Property? RentedProperty { get; set; }
     }
 
-    public enum Role
+    public enum PersonType
     {
-        Lessor, // Locador
-        Lessee  // Locatário
+        Lessor,
+        Lessee
     }
 }
